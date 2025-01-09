@@ -21,10 +21,15 @@ from dataclasses import dataclass
 
 @dataclass
 class ModelTrainerConfig:
-    artifact_folder = os.path.join(artifact_folder)
-    trained_model_path = os.path.join(artifact_folder,'model.pkl')
+    artifact_folder= os.path.join(artifact_folder)
+    trained_model_path= os.path.join(artifact_folder,"model.pkl" )
     expected_accuracy=0.45
-    model_config_file_path = os.path.join('config','model.yaml')
+    model_config_file_path= os.path.join('config','model.yaml')
+
+
+
+
+
 
 class ModelTrainer:
     def __init__(self):
